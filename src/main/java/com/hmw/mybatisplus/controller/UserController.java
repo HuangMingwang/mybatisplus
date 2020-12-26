@@ -2,6 +2,9 @@ package com.hmw.mybatisplus.controller;
 
 
 import com.hmw.mybatisplus.service.UserService;
+import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiResponse;
+import io.swagger.annotations.ApiResponses;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -22,6 +25,7 @@ import org.springframework.web.servlet.ModelAndView;
 public class UserController {
     @Autowired
     private UserService userService;
+
 
     @GetMapping("/index")
     public ModelAndView index() {
